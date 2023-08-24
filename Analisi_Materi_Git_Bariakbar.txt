@@ -1,0 +1,84 @@
+1. Apa Itu Git?
+Git adalah sistem kontrol versi terdistribusi yang digunakan untuk mengelola perubahan dalam kode sumber atau proyek perangkat lunak. Dikembangkan oleh Linus Torvalds, Git memungkinkan kolaborasi yang efisien, pelacakan perubahan, dan manajemen proyek yang lebih baik.
+Git adalah singkatan dari Group Inclusive Tour. Git merupakan version control system yang gratis dan juga open source. Git dirancang untuk menangani segala project baik itu project besar atau project sederhana. Git memungkinkan para pengembang untuk bekerja secara bersama-sama pada proyek yang sama dan melacak setiap perubahan yang dilakukan pada source code. Terdapat 2 sistem git, yaitu centralized dan distributed:
+
+Centralized
+
+Git centralized berkerja hanya dengan menggunakan satu server yang berfungsi untuk menyimpan data dari project. Sistem git ini membutuhkan koneksi network untuk dapat mengakses data dari project. Selain itu, ketika terjadi sesuatu pada server seperti server corrupt, maka data project yang ada di dalam server akan berpotensi untuk hilang juga.
+
+Distributed
+
+Git distributed bekerja dengan menyimpan data project di lokal dan juga di server. Sehingga lebih aman ketika terjadi sesuatu pada server seperti server corrupt karena sudah terdapat backup dari data project di lokal.
+
+2. Keuntungan Penggunaan Git:
+
+Pelacakan Perubahan: Git mencatat setiap perubahan dalam kode, memungkinkan Anda melihat perbedaan antara revisi, menemukan siapa yang melakukan perubahan, dan mengapa perubahan itu dilakukan.
+Kolaborasi: Git memungkinkan tim bekerja secara paralel pada cabang yang berbeda, menggabungkan kode dengan mudah melalui proses penggabungan (merge) atau rebasing.
+Cekpoint dan Revert: Anda dapat membuat cekpoint (commit) pada setiap perubahan yang signifikan. Jika ada masalah, Anda dapat kembali ke commit sebelumnya.
+Branching: Git memungkinkan pembuatan cabang (branch) untuk mengembangkan fitur baru atau memperbaiki bug tanpa mempengaruhi kode di branch utama.
+Histori yang Jelas: Setiap commit memiliki pesan yang menjelaskan perubahan yang dilakukan, membantu pemahaman histori proyek.
+Distribusi: Git adalah sistem terdistribusi, artinya setiap anggota tim memiliki salinan penuh repositori, yang memungkinkan kerja offline dan mengurangi risiko kehilangan data.
+3. Fundamental dalam Git:
+
+Repository: Direktori yang mengandung semua berkas, revisi, dan informasi mengenai proyek.
+Commit: Cekpoint dalam sejarah repositori yang merekam perubahan terhadap file.
+Branch: Cabang yang memungkinkan pengembangan paralel dalam repositori.
+Merge: Menggabungkan perubahan dari satu branch ke branch lain.
+Pull Request: Permintaan untuk menggabungkan perubahan dari satu branch ke branch lain, umumnya digunakan dalam kolaborasi dan proyek open source.
+Conflict: Terjadi ketika Git tidak dapat menggabungkan perubahan secara otomatis dan memerlukan intervensi manual.
+4. Alur Kerja Umum Menggunakan Git:
+
+Inisialisasi Repositori: Membuat repositori baru atau menginisialisasi repositori dalam direktori yang ada.
+Mengonfigurasi Git: Mengatur nama pengguna, alamat email, editor teks, dan opsi lain.
+Menambahkan dan Commit: Menambahkan perubahan ke indeks dan melakukan commit.
+Pembuatan Cabang: Membuat cabang baru untuk mengembangkan fitur atau perbaikan tanpa mengganggu branch utama.
+Penggabungan (Merge): Menggabungkan perubahan dari satu branch ke branch lain.
+Resolusi Konflik: Menyelesaikan konflik yang muncul saat menggabungkan perubahan.
+Push: Mengunggah perubahan dari repositori lokal ke repositori jarak jauh (remote repository).
+Pull Request: Permintaan untuk menggabungkan perubahan ke branch utama (biasanya dihubungkan dengan platform seperti GitHub).
+5. Alat Bantu untuk Git:
+
+Command Line Interface (CLI): Menggunakan perintah di Command Prompt atau Terminal.
+Visual Studio Code (VS Code): Editor kode yang terintegrasi dengan Git dan menyediakan antarmuka grafis.
+GitHub, GitLab, Bitbucket: Platform untuk hosting dan berkolaborasi pada proyek menggunakan Git.
+6. Tips Penting:
+
+Selalu beri pesan commit yang jelas dan deskriptif.
+Selalu lakukan git pull sebelum memulai bekerja.
+Gunakan branch untuk setiap fitur atau perbaikan.
+Lakukan git status secara berkala untuk melihat status perubahan.
+Pastikan konflik dipecahkan sebelum melakukan push.
+7. Kesimpulan:
+Git adalah alat penting dalam pengembangan perangkat lunak modern. Dengan pengelolaan perubahan, kolaborasi yang efisien, dan manajemen proyek yang baik, Git memungkinkan tim untuk bekerja bersama dalam menghasilkan perangkat lunak berkualitas. Memahami konsep dasar dan alur kerja Git adalah langkah awal yang penting untuk menjadi seorang pengembang yang kompeten.
+
+GitLab dan GitHub
+
+1. Pengantar:
+GitLab dan GitHub adalah platform pengelolaan repositori kode sumber berbasis Git yang populer dan sering digunakan dalam pengembangan perangkat lunak. Meskipun keduanya memiliki tujuan yang sama, yaitu memfasilitasi kolaborasi dan pengembangan proyek, ada perbedaan signifikan dalam fitur, tujuan, dan cara penggunaan keduanya.
+
+2. Tujuan:
+
+GitHub: GitHub, yang diakuisisi oleh Microsoft, adalah platform yang sangat terkenal dalam proyek open source dan umumnya digunakan oleh komunitas pengembang untuk berkolaborasi dalam proyek-proyek bersifat publik.
+GitLab: GitLab, di sisi lain, menawarkan pilihan antara self-hosting (GitLab Community Edition) dan menggunakan layanan yang di-host oleh GitLab (GitLab SaaS). Ini cocok untuk proyek open source, proyek internal, dan pengembangan perusahaan.
+3. Pemodelan Bisnis:
+
+GitHub: GitHub menawarkan hosting publik dan pribadi. Penggunaan untuk proyek open source adalah gratis, tetapi untuk proyek pribadi atau bisnis, Anda perlu berlangganan rencana berbayar.
+GitLab: GitLab menawarkan self-hosting (gratis) serta rencana berbayar yang mencakup fitur-fitur tambahan seperti alat-alat CI/CD (Continuous Integration/Continuous Deployment).
+4. Integrasi CI/CD:
+
+GitHub: GitHub Actions adalah layanan CI/CD yang terintegrasi dengan GitHub. Ini memungkinkan Anda untuk mengotomatiskan alur kerja pengujian dan distribusi.
+GitLab: GitLab memiliki alat CI/CD yang kuat di dalam platformnya. Ini termasuk kemampuan untuk mengatur alur kerja, memantau pengujian, dan mengotomatiskan pengiriman.
+5. Fitur Keamanan:
+
+GitHub: GitHub menawarkan fitur keamanan, seperti pemindaian kode (code scanning) untuk mendeteksi kerentanan, serta integrasi dengan Dependency Graph untuk mengamati dependensi perangkat lunak.
+GitLab: GitLab memiliki fitur keamanan yang mencakup analisis keamanan kode, skanning kerentanan, dan keamanan kontinu.
+6. Kolaborasi:
+
+GitHub: GitHub memiliki alat yang kuat untuk mengelola kolaborasi dalam proyek open source, termasuk sistem permintaan tarik (pull request) yang efisien.
+GitLab: GitLab juga memiliki fitur permintaan tarik, dan juga menawarkan alat kolaborasi yang kuat.
+7. Pengelolaan Repositori:
+
+GitHub: GitHub memiliki antarmuka yang sederhana dan mudah digunakan untuk mengelola repositori, membuat branch, melakukan permintaan tarik, dan melihat perbedaan.
+GitLab: GitLab juga memiliki antarmuka pengelolaan repositori yang lengkap dengan alat untuk melihat perbedaan kode, mengelola cabang, dan menggabungkan perubahan.
+8. Kesimpulan:
+Kedua GitLab dan GitHub adalah platform yang sangat berguna untuk pengembangan perangkat lunak. Pilihan antara keduanya tergantung pada kebutuhan proyek, jenis kolaborasi yang diinginkan, serta kemampuan dan anggaran tim pengembang. Memahami perbedaan dan fitur-fitur unik dari kedua platform ini penting untuk memilih yang sesuai dengan kebutuhan proyek dan tim.
